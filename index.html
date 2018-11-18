@@ -1,62 +1,157 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>清泽招新</title>
+    <title>清泽心雨报名入口</title>
     <style type="text/css">
-    h1{
-        text-align:center;
+    *{
+        -webkit-user-select: none;
+        padding: 0;
+        margin: 0;
+        vertical-align: baseline;
     }
-    h2{
+
+    .header{
+        margin-top: 70px;
+        margin-left: 290px;
+    }
+    
+    .box{
+        position: absolute;
+        width: 700px;
+        height:520px;
+        left: 0;
+        right: 0;
+        margin: 50px auto auto;
+        padding:20px 68px 20px 68px;
+        border: 1px solid #6dc7ef; 
+        background-color: rgba(131, 193, 235, 0.5);
+        z-index: 1;
+    }
+                                                 
+    .submit{
+        display: block;
+        width: 152px;
+        height: 56px;
+        line-height: 18px;
+        border: none;
+        border-radius: 0;
+        background-color:rgb(85, 168, 242);
+        font-size: 20px;
+        outline: none;
         text-align: center;
     }
+
+    .reason{
+        text-align: center;
+        display: block;
+    }
+
+
+    #ico{
+        display: inline-block;
+        height: 210px;
+    } 
+    
+    #file{
+        width: 0;
+        height: 0;
+    }
+
+    input{
+        border: none;
+        width: 154px;
+        height: 44px;
+        margin: 13px 5px;
+        border-radius: 20px;
+        vertical-align: middle;
+        outline:none;
+        color:#000;
+    }
+
+    select{
+        border: none;
+        width: 82%82%;
+        height: 44px;
+        margin: 16px 80px 16px auto;
+        border-radius: 20px;
+        outline:none;
+        color:rgb(20, 17, 17);
+    }
+ 
+
+    p{
+        display: inline-block;
+        width: 22px;
+        height: 210px;
+        text-align: center;
+        font-size: 23.33px;
+        
+    }
+
+ 
     body{
-        text-align: center;
+        background: url(yuanshi.png) no-repeat 0 0/cover;
+        text-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
     }
-    span{color: red;}
+
     </style>
 </head>
 <body>
-    <h1><span>清泽family等着你的加入</span></h1>
-    <h2>清兮汾水，惠泽三晋</h2>
-    <div>
-        <p>姓名<input type="text" placeholder="请输入姓名"></p>
+    <div class="header">
+        <img src="清泽心雨报名入口.png">
     </div>
-    <div>
-        <p>专业<input type="text" placeholder="请输入专业"</p>
+    <div class="box">
+        <form>
+            <input id="file" type="file">
+            <label id="ico" for="file" style="float: right">
+                    <div class="pic">
+                        <p>照片</p>
+                        <img alt="头像" src="头像.png" style="background-color:#fff;border-radius:25px;padding:30px 20px;">
+                    </div>
+            </label>
+            <div class="box1" style="width:65%;display: inline-block;font-size: 20px;">
+                姓名:
+                <input type="text" />
+                性别:<input type="text" />
+                <br />
+                专业:<input type="text" />
+                班级:<input type="tel" />
+                <br />
+                电话:<input style="width: 80%;" type="tel" />
+            </div>
+            <div class="box2" style="font-size:20px;">
+                    志愿：
+                    <select>
+                        <option value="" selected="selected"></option>
+                        <option value="general office">综合办公室</option>
+                        <option value="public relations planning department">公关策划部</option>
+                        <option value="cyber security">网络安全部(蓝之青)</option>                        <option value="visual design department">视觉设计部(卡乐坊)</option>
+                        <option value="technical development department">技术开发部(UED)</option>
+                        <option value="integrated media group">综合媒体集团</option>
+                        <option value="news corp">新闻集团</option>
+                        <option value="video group">视频集团(微效坊、微影像、电视台)</option>
+                    </select>   
+                    <select>
+                        <option value="" selected="selected"></option>
+                        <option value="general office">综合办公室</option>
+                        <option value="public relations planning department">公关策划部</option>
+                        <option value="cyber security">网络安全部(蓝之青)</option>
+                        <option value="visual design department">视觉设计部(卡乐坊)</option> 
+                        <option value="technical development department">技术开发部(UED)</option>
+                        <option value="integrated media group">综合媒体集团</option>
+                        <option value="news corp">新闻集团</option>
+                        <option value="video group">视频集团(微效坊、微影像、电视台)</option>
+                    </select>
+            </div>
+            <div class="reason" style="font-size: 20px;"> 
+                填报理由
+                <input style="width: 95%;height: 110px; vertical-align: top;" type="text">
+            </div>
+            <input class="submit" type="submit" value="完成" style="margin:auto" />
+        </form>
     </div>
-    <div>
-        <p>电话<input type="tel"></p>
-    </div>
-    <div>
-        <p>邮箱<input type="tel"></p>
-    </div>
-<form>
-    <p>部门：
-    <select>
-        <option value="General office">综合办公室</option>
-        <option value="Public relations planning department">公关策划部</option>
-        <option value="Cyber security">网络安全部</option>
-        <option value="Visual design department">视觉设计部</option>
-        <option value="Technical development department">技术开发部</option>
-        <option value="Integrated media group">综合媒体集团</option>
-        <option value="News corp">新闻集团</option>
-        <option value="Marginal effects fang">微效坊</option>
-        <option value="Micro image">微影像</option>
-        <option value="Television">电视台</option>
-        </select>
-    </p>
-    <div>
-        性别:
-         <label for="male">男</label>
-         <input type="radio" name="gender" id="male" />
-         <label for="female">女</label>
-         <input type="radio" name="gender" id="female" />
-    </div>
-    <button type="button">提交</button>
-</form>
-    <img src="清泽.jpg.png" />
 </body>
 </html>
